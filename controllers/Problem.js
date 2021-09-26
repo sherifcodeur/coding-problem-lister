@@ -201,7 +201,7 @@ const destroy = async (req,res)=>{
             throw new Error("nothing to delete")
         }else{
 
-            res.status(200).send(deletedProblem)
+            res.status(200).redirect('/admin/problems')
         }
         
     } catch (error) {

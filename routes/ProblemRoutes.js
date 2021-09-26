@@ -18,7 +18,7 @@
 
     router.get('/edit/:id',problemController.edit)
     
-    router.delete('/delete/:id',problemController.destroy)
+    router.get('/delete/:id',problemController.destroy)
     
     router.get('/search',problemController.search)
     

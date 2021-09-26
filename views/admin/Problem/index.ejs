@@ -13,6 +13,7 @@
 
 
       <h2>All Problems</h2>
+      <a href="/admin/problems/create" class="btn btn-primary">Create New Problem</a>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -33,7 +34,7 @@
                 <td><%= problem.name %></td>
                 <td><%= problem.createdAt.toDateString() %></td>
                 <td><%= problem.updatedAt.toDateString() %></td>
-                <td ><a href="/admin/problems/show/<%= problem.id %>" class="btn btn-info btn-sm  me-3">show</a><button class="btn btn-warning btn-sm me-3">edit</button><button class="btn btn-danger btn-sm me-3">delete</button></td>
+                <td ><a href="/admin/problems/show/<%= problem.id %>" class="btn btn-info btn-sm  me-3">show</a><a href="/admin/problems/edit/<%= problem.id %>" class="btn btn-warning btn-sm me-3">edit</a><a href="/admin/problems/delete/<%= problem.id %>"class="btn btn-danger btn-sm me-3">delete</a></td>
               </tr>
 
 
