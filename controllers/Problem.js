@@ -98,7 +98,7 @@ const show = async (req,res)=>{
             throw new Error("no such problem")
         }else{
 
-            res.status(200).send(oneProblem);
+            res.status(200).render('./admin/Problem/show',{'problem':oneProblem});
         }
 
         
