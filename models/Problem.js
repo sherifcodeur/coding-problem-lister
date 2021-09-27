@@ -36,6 +36,10 @@
         type:{
             type:String,
             default:"how to"
+        },
+        email:{
+            type:String,
+            
         }
         
     
