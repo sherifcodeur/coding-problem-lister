@@ -18,7 +18,7 @@ const index = async (req,res)=>{
             res.render('./admin/Problem/index',{'problems':null});
         }else{
             // we show all problems
-            console.log(allProblem)
+            //console.log(allProblem)
             res.render('./admin/Problem/index',{'problems':allProblem});
         }        
     } catch (error) {
@@ -47,7 +47,7 @@ const create = async(req,res)=>{
 // add a new problem to the database
 const save = async (req,res)=>{
 
-    //console.log("le body",typeof req.body)
+    console.log("le body", req.body)
 
     let response = {};
 

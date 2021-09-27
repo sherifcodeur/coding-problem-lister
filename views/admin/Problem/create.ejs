@@ -45,6 +45,7 @@
           <input type="range" name="rate" class="form-range" min="1" max="10" step="1" id="customRangeRate">
           </div>
 
+          <!-- select field -->
           <div class="mb-3">
             <select name="category" class="form-select" aria-label="Default select example">
             <option selected>Category of Problem</option>
@@ -55,9 +56,25 @@
             <option value="mysql">Mysql</option>
             <option value="php">Php</option>
             <option value="other">Other</option>
+          </select>
+        </div>
 
-          </select></div>
+        <!-- radio buttons field -here "how to" or "error" -->
+        <div class="mb-3">
 
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="type" id="flexRadioDefault1" value="how to">
+            <label class="form-check-label" for="flexRadioDefault1">
+              how to
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="type" id="flexRadioDefault2" value="error" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              error
+            </label>
+          </div>
+        </div>
 
 
 

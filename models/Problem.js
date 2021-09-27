@@ -32,6 +32,10 @@
         category:{
             type:String,
             default:"other"
+        },
+        type:{
+            type:String,
+            default:"how to"
         }
         
     
