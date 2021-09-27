@@ -52,18 +52,26 @@ const save = async (req,res)=>{
     let response = {};
 
     try {
+        
+        if(req.body.resolved =='on'){
 
+                    req.body.resolved = true;
+                }
         const newProblem = await new Problem(req.body); 
+
+       
+
+        console.log("le body",req.body)
         
         newProblem.save()
         .then(()=>{
 
-            res.redirect('/problems');
+            res.redirect('/admin/problems');
 
         })
         .catch(e=>{
             
-            //console.log("erreur 1",e)
+            console.log("erreur 1",e)
 
             res.status(500).send(response);
         })

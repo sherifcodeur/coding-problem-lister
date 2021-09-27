@@ -20,6 +20,7 @@
             <tr>
               <th scope="col">#</th>
               <th scope="col">Name</th>
+              <th scope="col">Resolved</th>
               <th scope="col">created</th>
               <th scope="col">updated</th>
               <th scope="col">Actions</th>
@@ -32,6 +33,7 @@
               <tr>
                 <td></td>
                 <td><%= problem.name %></td>
+                <td><%= problem.resolved %></td>
                 <td><%= problem.createdAt.toDateString() %></td>
                 <td><%= problem.updatedAt.toDateString() %></td>
                 <td ><a href="/admin/problems/show/<%= problem.id %>" class="btn btn-info btn-sm  me-3">show</a><a href="/admin/problems/edit/<%= problem.id %>" class="btn btn-warning btn-sm me-3">edit</a><a href="/admin/problems/delete/<%= problem.id %>"class="btn btn-danger btn-sm me-3">delete</a></td>

@@ -15,6 +15,12 @@
             type:String,
             required:[true,'required field'],       
         },
+
+        resolved:{
+            type:Boolean,
+            default:false,
+        },
+        
     
     },     
         // Make Mongoose use Unix time (seconds since Jan 1, 1970)

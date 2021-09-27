@@ -16,7 +16,19 @@
       <a href="/admin/problems/create" class="btn btn-primary">Create New Problem</a>
       <div >
 
-        la form pour ajouter un probleme
+        <form action="/admin/problems" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name Of Problem</label>
+            <input type="text" name="name" class="form-control" id="name" aria-describedby="nameProblem">
+            <div id="nameProblem" class="form-text">Give a short name that describes the Problem.</div>
+          </div>
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" name="resolved" class="form-check-input" id="resolved">
+            <label class="form-check-label" for="resolved">Resolved</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
       </div>
     </main>
