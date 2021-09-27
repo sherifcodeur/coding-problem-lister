@@ -20,6 +20,19 @@
             type:Boolean,
             default:false,
         },
+        description:{
+            type:String,
+        },
+        rate:{
+            type:Number,
+            min:1,
+            max:10,
+            //pilou:"moki"
+        },
+        category:{
+            type:String,
+            default:"other"
+        }
         
     
     },     

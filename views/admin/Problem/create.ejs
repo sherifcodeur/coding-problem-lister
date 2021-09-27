@@ -12,21 +12,55 @@
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 
 
-      <h2>All Problems</h2>
-      <a href="/admin/problems/create" class="btn btn-primary">Create New Problem</a>
-      <div >
+      <h2 class="mb-3">All Problems</h2>
+      <a href="/admin/problems/create" class="btn btn-primary mb-3">Create New Problem</a>
+      <div class="container-sm" >
 
         <form action="/admin/problems" method="POST">
+
+
+          <!-- normal input filed text -->
           <div class="mb-3">
             <label for="name" class="form-label">Name Of Problem</label>
             <input type="text" name="name" class="form-control" id="name" aria-describedby="nameProblem">
             <div id="nameProblem" class="form-text">Give a short name that describes the Problem.</div>
           </div>
           
+
+          <!-- checkbox field -->
           <div class="mb-3 form-check">
             <input type="checkbox" name="resolved" class="form-check-input" id="resolved">
             <label class="form-check-label" for="resolved">Resolved</label>
           </div>
+
+          <!-- textarea field -->
+          <div class="mb-3">
+            <label for="descriptionProblem" class="form-label">Description Problem</label>
+            <textarea class="form-control" id="descriptionProblem" name="description" rows="3"></textarea>
+          </div>
+
+          <!-- range field  -->
+          <div class="mb-3">
+          <label for="customRangeRate" class="form-label">Rate of Difficulty</label>
+          <input type="range" name="rate" class="form-range" min="1" max="10" step="1" id="customRangeRate">
+          </div>
+
+          <div class="mb-3">
+            <select name="category" class="form-select" aria-label="Default select example">
+            <option selected>Category of Problem</option>
+            <option value="javascript">Javascript</option>
+            <option value="node">Node</option>
+            <option value="express">Express</option>
+            <option value="mongodb">Mongodb</option>
+            <option value="mysql">Mysql</option>
+            <option value="php">Php</option>
+            <option value="other">Other</option>
+
+          </select></div>
+
+
+
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
 
