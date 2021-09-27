@@ -52,7 +52,8 @@ const save = async (req,res)=>{
     let response = {};
 
     try {
-        
+
+        // bootstrap sends on instead of true
         if(req.body.resolved =='on'){
 
                     req.body.resolved = true;
@@ -61,7 +62,7 @@ const save = async (req,res)=>{
 
        
 
-        console.log("le body",req.body)
+        //console.log("le body",req.body)
         
         newProblem.save()
         .then(()=>{
@@ -71,7 +72,7 @@ const save = async (req,res)=>{
         })
         .catch(e=>{
             
-            console.log("erreur 1",e)
+            //console.log("erreur 1",e)
 
             res.status(500).send(response);
         })
