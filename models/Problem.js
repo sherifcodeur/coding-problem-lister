@@ -40,6 +40,12 @@
         email:{
             type:String,
             
+        },
+        tag:{
+            type:Array,
+        },
+        due:{
+            type:Date,
         }
         
     
