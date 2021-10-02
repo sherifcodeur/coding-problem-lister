@@ -46,6 +46,10 @@
         },
         due:{
             type:Date,
+        },
+
+        urls:{
+            type:Array
         }
         
     
