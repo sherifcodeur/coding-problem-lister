@@ -97,8 +97,18 @@
         </div>
 
        
-        
-        
+        <!-- clonable or incrementable fields -->
+        <div class="clonable-block mb-3" data-toggle="cloner">
+          <div class="clonable mb-3" data-ss="1">
+            <label for="" class="clonable-increment-html">url</label>
+            <input id="person_1" class="clonable-decrement-value clonable-increment-name form-control" type="text" name="urls[0]" >
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="clonable-button-add btn btn-outline-primary btn-sm" type="button">Add url</button>
+              
+          </div>
+         
+        </div>
 
 
           <button type="submit" class="btn btn-primary">Submit</button>
@@ -113,9 +123,22 @@
 <%- include('../partials/footer') %>
 
 <script src="/js/tagging.min.js"></script>
+<script src="/js/jquery.cloner.js"></script>
 
 
 <script>$("#tagBox").tagging();</script>
+<script>
+
+$(function(){
+  $('#clonable-block').cloner({
+
+    
+
+    incrementName: 'clonable-increment',
+    
+  });
+});
+</script>
 
 
 </script>
